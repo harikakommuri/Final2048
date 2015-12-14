@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048</title>
+  <link rel="stylesheet" href="2048.css">
+  <script type="text/javascript" src="jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="2048.js"></script>
+</head>
+<body onkeyup="slide(event)" id="body"  onload="initialNumbers()">
+  <label class="name">2048</label>
+  <label class="score">Score<br><span class="scorevalue">0</span></label>
+  <label class="bestscore">Best score<br><span class="bestscorevalue">0</span></label>
+  <label class="newgame" onclick="startNewGame()">New game</label><br>
+  <p class="hint">Join the numbers and get 2048 tile!</p>
+  <table class="grid2048" cellspacing="10" id="table">
+    <tr class="game row">
+      <td class="game cell" id="cell1"></td>
+      <td class="game cell" id="cell2"></td>
+      <td class="game cell" id="cell3"></td>
+      <td class="game cell" id="cell4"></td>
+    </tr>
+    <tr class="game row">
+      <td class="game cell" id="cell5"></td>
+      <td class="game cell" id="cell6"></td>
+      <td class="game cell" id="cell7"></td>
+      <td class="game cell" id="cell8"></td>
+    </tr>
+    <tr class="game row">
+      <td class="game cell" id="cell9"></td>
+      <td class="game cell" id="cell10"></td>
+      <td class="game cell" id="cell11"></td>
+      <td class="game cell" id="cell12"></td>
+    </tr>
+    <tr class="game row">
+      <td class="game cell" id="cell13"></td>
+      <td class="game cell" id="cell14"></td>
+      <td class="game cell" id="cell15"></td>
+      <td class="game cell" id="cell16"></td>
+    </tr>
+  </table>
+</body>
+</html>
